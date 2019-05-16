@@ -1,0 +1,15 @@
+<div class="container d-flex">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card m-3" style="width: 18rem;">
+      <div class="card-body">
+         <h5 class="card-name"><%= link_to cocktail.name, cocktail_path(cocktail)%></h5>
+         <p class="card-description"><%= cocktail.description %></p>
+         <button type="submit" class="btn btn-secondary"><%= link_to "Details", cocktail_path(cocktail) %></button>
+       </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
