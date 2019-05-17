@@ -5,3 +5,20 @@ text-decoration: none;
   text-decoration: none;
 }
 }
+
+.btn-primary a{
+color: white;
+text-decoration: none;
+&:hover {
+  text-decoration: none;
+}
+}
+
+
+.btn-light {
+  border-radius: 10px;
+}
+
+.btn-light a:hover {
+    text-decoration: none;
+  }

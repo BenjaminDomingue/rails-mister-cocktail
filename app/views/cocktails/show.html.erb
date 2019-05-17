@@ -1,3 +1,9 @@
 <div class="container text-center">
-<%= @cocktail.name %>
+  <% @cocktail.doses.each do|dose| %>
+  <%= dose.name %>
+  <% end %>
+ <%= link_to "Back to main page", cocktails_path %>
+
 </div>
+
+
