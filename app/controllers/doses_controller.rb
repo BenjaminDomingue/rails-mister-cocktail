@@ -18,7 +18,7 @@ class DosesController < ApplicationController
     if @dose.valid?
       redirect_to cocktail_path(@cocktail)
     else
-      render :new
+      render "cocktails/show"
     end
   end
 

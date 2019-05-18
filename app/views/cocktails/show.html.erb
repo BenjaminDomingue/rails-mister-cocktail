@@ -1,8 +1,12 @@
 <div class="container text-center">
   <% @cocktail.doses.each do|dose| %>
-  <%= dose.name %>
+  <%= dose.description %>
   <% end %>
  <%= link_to "Back to main page", cocktails_path %>
+
+<div class="col-xs-12">
+     <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
+   </div>
 
 </div>
 
